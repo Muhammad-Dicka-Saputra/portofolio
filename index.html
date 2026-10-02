@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio | Muhammad Dicka Saputra</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="navbar">
+    <a href="#home" class="logo">Dicka<span>.</span></a>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <button id="themeButton" class="icon-button" type="button">☾</button>
+</header>
+
+<main>
+<section id="home" class="hero section">
+    <div>
+        <p class="eyebrow">MAHASISWA • WEB DEVELOPER PEMULA</p>
+        <h1>Halo, saya <span>Muhammad Dicka Saputra</span>.</h1>
+        <p class="hero-description">
+            Mahasiswa Rekayasa Sistem Komputer yang sedang belajar membangun
+            website menggunakan HTML, CSS, dan JavaScript.
+        </p>
+        <a class="button primary" href="#projects">Lihat Project</a>
+        <a class="button secondary" href="#contact">Hubungi Saya</a>
+    </div>
+    <div class="profile-card">
+        <div class="avatar">MDS</div>
+        <h2>Muhammad Dicka Saputra</h2>
+        <p>Rekayasa Sistem Komputer</p>
+        <p>NIM: H1051251053</p>
+    </div>
+</section>
+
+<section id="about" class="section">
+    <p class="eyebrow">TENTANG SAYA</p>
+    <h2>Belajar, mencoba, dan membuat.</h2>
+    <div class="about-grid">
+        <div>
+            <p>Saya sedang mempelajari struktur HTML, styling CSS, dan interaksi JavaScript.</p>
+            <p>Portfolio ini adalah contoh project yang menggabungkan ketiga teknologi tersebut.</p>
+        </div>
+        <div class="info-box">
+            <p><strong>Program Studi</strong><br>Rekayasa Sistem Komputer</p>
+            <p><strong>Fokus</strong><br>HTML • CSS • JavaScript</p>
+        </div>
+    </div>
+</section>
+
+<section id="skills" class="section">
+    <p class="eyebrow">SKILLS</p>
+    <h2>Yang sedang saya pelajari</h2>
+    <div class="cards">
+        <article class="card"><b>01</b><h3>HTML</h3><p>Struktur halaman, form, link, gambar, tabel, dan list.</p></article>
+        <article class="card"><b>02</b><h3>CSS</h3><p>Warna, font, spacing, Flexbox, Grid, hover, dan responsive design.</p></article>
+        <article class="card"><b>03</b><h3>JavaScript</h3><p>Function, event, DOM, input, dan interaksi sederhana.</p></article>
+    </div>
+</section>
+
+<section id="projects" class="section">
+    <p class="eyebrow">PROJECTS</p>
+    <h2>Project yang saya kerjakan</h2>
+    <div class="filters">
+        <button class="filter active" data-filter="all">Semua</button>
+        <button class="filter" data-filter="html">HTML</button>
+        <button class="filter" data-filter="css">CSS</button>
+        <button class="filter" data-filter="js">JavaScript</button>
+    </div>
+    <div class="cards">
+        <article class="card project" data-category="html"><b>01</b><h3>Latihan HTML</h3><p>Latihan struktur dan elemen HTML dasar.</p></article>
+        <article class="card project" data-category="css"><b>02</b><h3>Landing Page</h3><p>Halaman dengan styling CSS dan layout.</p></article>
+        <article class="card project" data-category="js"><b>03</b><h3>Interactive Form</h3><p>Form yang diproses menggunakan JavaScript.</p></article>
+    </div>
+</section>
+
+<section id="contact" class="section">
+    <p class="eyebrow">CONTACT</p>
+    <h2>Mari terhubung.</h2>
+    <form id="contactForm" class="contact-form">
+        <label>Nama<input id="nameInput" type="text" placeholder="Nama" required></label>
+        <label>Email<input id="emailInput" type="email" placeholder="Email" required></label>
+        <label>Pesan<textarea id="messageInput" rows="5" placeholder="Pesan" required></textarea></label>
+        <button class="button primary" type="submit">Kirim Pesan</button>
+        <p id="formMessage"></p>
+    </form>
+</section>
+</main>
+
+<footer>© <span id="year"></span> Muhammad Dicka Saputra</footer>
+<script src="app.js"></script>
+</body>
+</html>
